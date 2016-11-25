@@ -1,0 +1,75 @@
+/* Total lines according to side bar counter: 75
+Comment lines counted manually: 14
+Bracket lines counted manually: 7
+Blank lines counted manually: 15
+Code lines counted manually: 39 */
+
+int main()
+{
+	int choice;
+
+	cout << "Welcome! This program will display a series of waves made from * symbols." << endl << endl;
+
+	// Display a small menu of options as a loop until the user is finished using the program
+	do
+	{
+		cout << "------------------------------- MAIN MENU -------------------------------" << endl;
+		cout << "What kind of waves would you like to see ?" << endl;
+		cout << "1. Same sized waves" << endl;
+		cout << "2. Waves that keep getting bigger" << endl;
+		cout << "3. Waves that keep getting smaller" << endl;
+		cout << "4. Waves that alternate in size between full and half sized waves" << endl;
+		cout << "-------------------------------------------------------------------------" << endl;
+		cout << "Please enter the number of your choice (1-4 or 0 to exit):" << endl;
+		cin >> choice;
+
+		// Get a new choice if the input was invalid
+		while (!(choice >= 0) && !(choice < 5))
+		{
+			cout << "That's not a valid choice, please enter 1-4, or 0 to exit: " << endl;
+			cin >> choice;
+		}
+
+		cout << endl << endl;
+
+
+		switch (choice)
+		{
+		case 1:
+			// Display waves of consistent size
+			print_consistent_waves();
+			break;
+
+		case 2:
+			// Display waves that keep getting bigger
+			print_growing_waves();
+			break;
+
+		case 3:
+			// Display waves that keep getting smaller
+			print_shrinking_waves();
+			break;
+
+		case 4:
+			// Display waves that alternate in size between half and full sized
+			print_alternating_waves();
+			break;
+
+		case 0: 
+			// If the user just wants to exit, don't print default error message and just break
+			break;
+
+		default:
+			// If not an expected entry, get a new choice number
+			cout << "That's not a valid choice, please enter 1-4, or 0 to exit: " << endl;
+			cin >> choice;
+			break;
+		}
+
+	//end of main menu
+	} while (choice != 0);
+
+	cout << "Thank you, good bye :)" << endl;
+
+	return 0;
+}
