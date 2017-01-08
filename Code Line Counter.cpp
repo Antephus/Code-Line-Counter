@@ -117,8 +117,8 @@ int countComments(Code currentCode, string fileName, ifstream& codeFile)
 						codeFile.get(currentCharacter);
 						skipWhiteSpace(codeFile, currentCharacter);
 
-						// If it's a new line or we've reached the eof, +1 to the comment line count
-						if (currentCharacter == '\n' || codeFile.peek() == EOF)
+						// If it's a new line, +1 to the comment line count
+						if (currentCharacter == '\n')
 						{
 							commentCount++;
 
@@ -273,8 +273,6 @@ int calculateCodeLines(int comments, int brackets, int total, int blanks)
 
 bool countEverything(Code& currentCode, string fileName, ifstream& codeFile) 
 {
-	int total, blanks;
-
 	// Count all the different types of lines that shouldn't count as code
 	currentCode.setTotalLines(countLines(currentCode, fileName, codeFile));
 	currentCode.setCommentLines(countComments(currentCode, fileName, codeFile));
@@ -287,7 +285,7 @@ bool countEverything(Code& currentCode, string fileName, ifstream& codeFile)
 	{
 		return false;
 	}
-	// Otherwise, return that the file was counted successfully
+	// Otherwise, calculate the and set the lines of actual code, and return that the file was counted successfully
 	else
 	{
 		// Calculate and set the actual lines of code

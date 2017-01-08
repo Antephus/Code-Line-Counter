@@ -1,6 +1,3 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppClean.targets(76,5): warning : Access to the path 'c:\users\spoon\dropbox\documents\visual studio 2015\projects\code line counter\debug\code line counter.exe' is denied.
-  Code Line Counter.cpp
-c:\users\spoon\dropbox\documents\visual studio 2015\projects\code line counter\code line counter\code line counter.cpp(277): warning C4101: 'total': unreferenced local variable
-c:\users\spoon\dropbox\documents\visual studio 2015\projects\code line counter\code line counter\code line counter.cpp(277): warning C4101: 'blanks': unreferenced local variable
+﻿  Code Line Counter.cpp
   Code Line Counter.vcxproj -> C:\Users\spoon\dropbox\documents\visual studio 2015\Projects\Code Line Counter\Debug\Code Line Counter.exe
   Code Line Counter.vcxproj -> C:\Users\spoon\dropbox\documents\visual studio 2015\Projects\Code Line Counter\Debug\Code Line Counter.pdb (Full PDB)

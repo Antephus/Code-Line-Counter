@@ -1,0 +1,35 @@
+--- Code File Name: Michael's Code.cpp ---
+Total lines: 677
+Comment lines: 70
+Bracket lines: 139
+Blank lines: 58
+Code lines: 410
+
+--- Code File Name: Ricky's Code.cpp ---
+Total lines: 251
+Comment lines: 21
+Bracket lines: 36
+Blank lines: 40
+Code lines: 154
+
+--- Code File Name: Test.txt ---
+Total lines: 75
+Comment lines: 14
+Bracket lines: 7
+Blank lines: 15
+Code lines: 39
+
+--- Code File Name: Comment Block Test.txt ---
+Total lines: 15
+Comment lines: 9
+Bracket lines: 0
+Blank lines: 6
+Code lines: 0
+
+--- Code File Name: Code Line Counter.cpp ---
+Total lines: 472
+Comment lines: 49
+Bracket lines: 118
+Blank lines: 106
+Code lines: 199
+
